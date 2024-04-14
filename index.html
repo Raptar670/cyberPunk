@@ -46,40 +46,67 @@
         </div>
         <div class="images">
 
-             <picture class="img1">
-                <source media="(min-width: 500px)" 
-                srcset="./images/chinese-tablet.png">
-                <source media="(min-width: 320px)"
-                 srcset="./images/chinese-mobile.png">
+            <picture class="img1">
+                <source media="(min-width: 500px)" srcset="./images/chinese-tablet.png">
+                <source media="(min-width: 320px)" srcset="./images/chinese-mobile.png">
 
-                 <img src="./images/chinese-mobile.png" alt="">
+                <img src="./images/chinese-mobile.png" alt="">
 
-             </picture>
+            </picture>
+            <picture class="img2">
+                <source media="(min-width: 500px)" srcset="./images/motorcycle-tablet.png">
 
-             <picture class="img2">
-                <source media="(min-width: 500px)"
-                 srcset="./images/motorcycle-tablet.png">
+                <source media="(min-width: 320px)" srcset="./images/motorcycle-mobile.png">
+                <img src="./images/motorcycle-mobile.png" alt="">
+            </picture>
 
-                <source media="(min-width: 320px)"
-                 srcset="./images/motorcycle-mobile.png">
-                 <img src="./images/motorcycle-mobile.png" alt="">
-             </picture>
+            <picture class="img3">
+                <source media="(min-width: 768px)" srcset="./images/city-desktop.png">
 
-             <picture class="img3">
-                <source media="(min-width: 768px)"
-                 srcset="./images/city-desktop.png">
+                <source media="(min-width: 500px)" srcset="./images/city-tablet.png">
 
-                <source media="(min-width: 500px)"
-                 srcset="./images/city-tablet.png">
+                <source media="(min-width: 320px)" srcset="./images/city-mobile.png">
 
-                 <source media="(min-width: 320px)"
-                  srcset="./images/city-mobile.png">
+                <img src="./images/city-mobile.png" alt="">
 
-                  <img src="./images/city-mobile.png" alt="">
-
-             </picture>
+            </picture>
 
         </div>
+
+        <section class="form">
+            <div class="container">
+                <div class="form-images">
+                    <div class="form-images-one"></div>
+                    <div class="form-images-two"></div>
+                </div>
+                <div class="form-description">
+                    <h3 class="form__title">Играй и выигрывай!</h3>
+                    <p class="form__desc">
+                        Играй в <span class="blue">Cyberpunk 2077</span> и получи возможность выиграть консоль <span
+                        class="blue">Xbox Series X</span> или <span class="blue">Sony PlayStation
+                        5</span>! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены
+                        32 февраля. Удачи! ;)
+                    </p>
+                    <form class="from-fields">
+                        <label for="text"></label>
+                        <input class="input" name=text id="text" type="text" placeholder="Как тебя зовут?" required>
+
+                        <label for="email"></label>
+                        <input class="input" name="email" id="email" type="email" placeholder="Твой e-mail" required>
+
+                        <label class="download" for="download">Прикрепить скриншот</label>
+                        <input class="input-download" id="download" type="file">
+
+                        <button class="form__btn">Отправить</button>
+                        <input class="input-checkbox" id="checkbox" type="checkbox">
+                        <label class="checkbox" for="checkbox">Согласен на обработку персональных данных</label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 </body>
 
