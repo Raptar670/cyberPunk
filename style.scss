@@ -280,8 +280,22 @@ body {
     grid-area: c;
 }
 
+.element {
+    position: absolute;
+    top: 90px;
+    left: 12px;
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: url(./images/aksiya.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .form {
     background-color: var(--bg-black);
+    position: relative;
 
     &::before {
         content: "";
@@ -322,6 +336,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 65px;
 
     &-one {
         background-image: url(./images/xbox-mobile.png);
@@ -340,6 +355,7 @@ body {
         min-width: 132px;
         min-height: 130px;
     }
+
 }
 
 .input {
@@ -396,10 +412,11 @@ body {
     font-weight: 700;
     font-size: 16px;
     color: #000;
-    margin-bottom:  14px;;
+    margin-bottom: 14px;
+    ;
 }
 
-.input-checkbox{
+.input-checkbox {
     z-index: -1;
     width: 1px;
     height: 1px;
@@ -407,7 +424,7 @@ body {
     opacity: 0;
 }
 
-.checkbox{
+.checkbox {
     font-weight: 300;
     font-size: 12px;
     color: #fff;
@@ -416,7 +433,7 @@ body {
     position: relative;
 }
 
-.checkbox::before{
+.checkbox::before {
     content: "";
     position: absolute;
     top: -1px;
@@ -427,7 +444,7 @@ body {
     height: 14px;
 }
 
-.input-checkbox:checked + label::after{ 
+.input-checkbox:checked+label::after {
     content: "";
     display: block;
     width: 12px;
@@ -441,6 +458,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.form-fields{
+.form-fields {
     padding-bottom: 70px;
 }

@@ -260,8 +260,22 @@ body {
   grid-area: c;
 }
 
+.element {
+  position: absolute;
+  top: 90px;
+  left: 12px;
+  display: block;
+  width: 62px;
+  height: 62px;
+  background-image: url(./images/aksiya.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .form {
   background-color: var(--bg-black);
+  position: relative;
 }
 .form::before {
   content: "";
@@ -297,6 +311,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 65px;
 }
 .form-images-one {
   background-image: url(./images/xbox-mobile.png);
